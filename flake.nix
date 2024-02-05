@@ -62,9 +62,9 @@
         modules = [
           ./hardware/_main.nix
 	  ./config.nix
-	  ./modules/kde2nix/nixos.nix
-	  ./modules/kde2nix/kde6.nix
-	  ./modules/Desktops/Kde/users-kde.nix
+	  ./nixos.nix
+	  ./modules/desktops/kde/kde6.nix
+	  ./modules/Desktops/kde/users-kde.nix
 	  ./modules/System/sysver-unstable.nix
 	  ./modules/System/syspkgs.nix
           home-manager-unstable.nixosModules.home-manager {
