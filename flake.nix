@@ -23,10 +23,10 @@
         modules = [
           ./hardware/_main.nix
 	  ./config.nix
-	  ./modules/Desktops/Gnome/gnome.nix
-	  ./modules/Desktops/Gnome/users-gnome.nix
-	  ./modules/System/sysver-stable.nix
-	  ./modules/System/syspkgs.nix
+	  ./modules/desktops/gnome/gnome.nix
+	  ./modules/desktops/gnome/users-gnome.nix
+	  ./modules/system/sysver-stable.nix
+	  ./modules/system/syspkgs.nix
 	  home-manager.nixosModules.home-manager {
 	  	home-manager.useGlobalPkgs = true;
             	home-manager.useUserPackages = true;
@@ -41,10 +41,10 @@
         modules = [
           ./hardware/_main.nix
 	  ./config.nix
-	  ./modules/Desktops/Kde/kde5.nix
-	  ./modules/Desktops/Kde/users-kde.nix
-	  ./modules/System/sysver-stable.nix
-	  ./modules/System/syspkgs.nix
+	  ./modules/desktops/kde/kde5.nix
+	  ./modules/desktops/kde/users-kde.nix
+	  ./modules/system/sysver-stable.nix
+	  ./modules/system/syspkgs.nix
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
@@ -64,9 +64,9 @@
 	  ./config.nix
 	  ./nixos.nix
 	  ./modules/desktops/kde/kde6.nix
-	  ./modules/Desktops/kde/users-kde.nix
-	  ./modules/System/sysver-unstable.nix
-	  ./modules/System/syspkgs.nix
+	  ./modules/desktops/kde/users-kde.nix
+	  ./modules/system/sysver-unstable.nix
+	  ./modules/system/syspkgs.nix
           home-manager-unstable.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
