@@ -10,9 +10,9 @@
 	pkgs.ranger pkgs.fd pkgs.fzf pkgs.git 
 	pkgs.wl-clipboard pkgs.adw-gtk3 pkgs.flatpak
 	pkgs.libsForQt5.skanlite pkgs.libsForQt5.accounts-qt
-	pkgs.libsForQt5.skanpage
+	pkgs.libsForQt5.skanpage pkgs.libsForQt5.filelight 
 	pkgs.libsForQt5.kgpg
-	pkgs.gnupg
+	pkgs.gnupg pkgs.libsForQt5.kcalc
 	pkgs.libsForQt5.kaccounts-integration
       	pkgs.libsForQt5.kaccounts-providers
       	pkgs.libsForQt5.kio-gdrive

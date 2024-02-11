@@ -2,11 +2,20 @@
 {
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+  inter
   roboto
+  wineWowPackages.stable
+  wine
+  variety
+  papirus-icon-theme
+  jq
+  stellarium
   jellyfin
+  shell_gpt
   jellyfin-web
   jellyfin-ffmpeg
   openai-whisper
+  chatgpt-cli
   deluge-gtk
   brave
   webtorrent_desktop
