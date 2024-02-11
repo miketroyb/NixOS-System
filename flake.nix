@@ -44,6 +44,7 @@
 	  ./modules/desktops/kde/kde5.nix
 	  ./modules/desktops/kde/users-kde.nix
 	  ./modules/system/sysver-stable.nix
+	  ./modules/system/fonts.nix
 	  ./modules/system/syspkgs.nix
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
