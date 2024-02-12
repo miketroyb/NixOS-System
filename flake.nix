@@ -42,7 +42,6 @@
           ./hardware/_main.nix
 	  ./config.nix
 	  ./modules/desktops/kde/kde5.nix
-	  ./modules/desktops/kde/users-kde.nix
 	  ./modules/system/sysver-stable.nix
 	  ./modules/system/fonts.nix
 	  ./modules/system/syspkgs.nix
@@ -65,7 +64,6 @@
 	  ./config.nix
 	  ./nixos.nix
 	  ./modules/desktops/kde/kde6.nix
-	  ./modules/desktops/kde/users-kde.nix
 	  ./modules/system/sysver-unstable.nix
 	  ./modules/system/syspkgs.nix
           home-manager-unstable.nixosModules.home-manager {
