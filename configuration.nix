@@ -36,7 +36,6 @@
   services.xserver.displayManager.sddm.enable = false;
   services.xserver.desktopManager.gnome.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
-  services.avahi.enable = true;
 
   # Intel Video acceleration
   nixpkgs.config.packageOverrides = pkgs: {
