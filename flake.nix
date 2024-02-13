@@ -32,12 +32,12 @@
             	home-manager.useUserPackages = true;
             	home-manager.users.anon = {
               	home.stateVersion = "23.11";
-              	imports = [ ./modules/home-manager/gnome_main.nix ];
+              	imports = [ ./modules/home-manager/main.nix ];
             };
           }
         ];
       };
-      NixOS-KDE = nixpkgs.lib.nixosSystem {
+      NixOS-KDE = nixpkgs-unstable.lib.nixosSystem {
         modules = [
           ./hardware/_main.nix
 	  ./configuration.nix
@@ -45,11 +45,11 @@
 	  ./modules/system/sysver-unstable.nix
 	  ./modules/system/fonts.nix
 	  ./modules/system/syspkgs.nix
-          home-manager.nixosModules.home-manager {
+          home-manager-unstable.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.anon = {
-              imports = [ ./modules/home-manager/kde_main.nix ];
+              imports = [ ./modules/home-manager/main.nix ];
               home.stateVersion = "24.05";
             };
           }
