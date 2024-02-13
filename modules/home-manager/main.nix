@@ -5,7 +5,9 @@
   home.homeDirectory = "/home/anon";
   programs.home-manager.enable = true;
 
-  home.packages = [ pkgs.keepassxc pkgs.ungoogled-chromium 
+  home.packages = [ 
+  	## Desktop agnostic apps
+  	pkgs.keepassxc pkgs.ungoogled-chromium 
         pkgs.firefox pkgs.megasync pkgs.libreoffice 
         pkgs.ranger pkgs.fd pkgs.fzf pkgs.git 
         pkgs.wl-clipboard pkgs.flatpak

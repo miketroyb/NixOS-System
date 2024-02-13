@@ -19,29 +19,10 @@
   }@inputs: {
     nixosConfigurations = {
     system = "x86_64-linux";
-      NixOS = nixpkgs.lib.nixosSystem {
+      NixOS-Unstable = nixpkgs-unstable.lib.nixosSystem {
         modules = [
           ./hardware/_main.nix
 	  ./configuration.nix
-	  ./modules/desktops/gnome/gnome.nix
-	  ./modules/desktops/gnome/users-gnome.nix
-	  ./modules/system/sysver-stable.nix
-	  ./modules/system/syspkgs.nix
-	  home-manager.nixosModules.home-manager {
-	  	home-manager.useGlobalPkgs = true;
-            	home-manager.useUserPackages = true;
-            	home-manager.users.anon = {
-              	home.stateVersion = "23.11";
-              	imports = [ ./modules/home-manager/main.nix ];
-            };
-          }
-        ];
-      };
-      NixOS-KDE = nixpkgs-unstable.lib.nixosSystem {
-        modules = [
-          ./hardware/_main.nix
-	  ./configuration.nix
-	  ./modules/desktops/kde/kde5.nix
 	  ./modules/system/sysver-unstable.nix
 	  ./modules/system/fonts.nix
 	  ./modules/system/syspkgs.nix

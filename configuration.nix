@@ -30,7 +30,9 @@
   };
   
   hardware.i2c.enable = true;
-
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.displayManager.sddm.enable = false;
+  services.avahi.enable = true;
   # Intel Video acceleration
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
@@ -47,6 +49,13 @@
 
   # Enable chrome to use wayland
   nixpkgs.config.chromium.commandLineArgs = "--enable-features=UseOzonePlatform --ozone-platform=wayland";
+
+  users.users.anon = {
+    isNormalUser = true;
+    description = "anon";
+    home = "/home/anon";
+    extraGroups = [ "networkmanager" "jellyfin" "wheel" "adbusers" ];
+  };
 
 
   # Zram
