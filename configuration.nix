@@ -4,7 +4,7 @@
 { config, pkgs, libs, options, ... }:
 
 {
-  
+  ## Boot settings
   boot.kernelPackages = pkgs.linuxPackages_6_7;
   #boot.kernelPatches = [ {
   #		extraConfig = ''
@@ -13,7 +13,6 @@
 
   #} ];
   boot.plymouth.enable = false;
-  # Bootloader.
   boot.loader.systemd-boot.enable = false;
   boot.loader.grub.enable = true;
   boot.loader.grub.efiSupport = true;
@@ -28,11 +27,17 @@
   mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
   magicOrExtension = ''\x7fELF....AI\x02'';
   };
-  
+ 
+  ## Powermanager options
   hardware.i2c.enable = true;
+
+  ## desktop related settings
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.displayManager.sddm.enable = false;
+  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
   services.avahi.enable = true;
+
   # Intel Video acceleration
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
@@ -56,7 +61,6 @@
     home = "/home/anon";
     extraGroups = [ "networkmanager" "jellyfin" "wheel" "adbusers" ];
   };
-
 
   # Zram
   zramSwap.enable = true;

@@ -1,19 +1,19 @@
 {
   description = "My NixOS workstation configurationuration";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    # nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    home-manager.url = "github:nix-community/home-manager/release-23.11";
+    # home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager-unstable.url = "github:nix-community/home-manager/master";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    #home-manager.inputs.nixpkgs.follows = "nixpkgs";
     home-manager-unstable.inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
 
   outputs = { 
   self, 
-  nixpkgs, 
+  #nixpkgs, 
   nixpkgs-unstable,
-  home-manager, 
+  #home-manager, 
   home-manager-unstable, 
   ... 
   }@inputs: {
