@@ -42,7 +42,7 @@
           ./hardware/_main.nix
 	  ./configuration.nix
 	  ./modules/desktops/kde/kde5.nix
-	  ./modules/system/sysver-stable.nix
+	  ./modules/system/sysver-unstable.nix
 	  ./modules/system/fonts.nix
 	  ./modules/system/syspkgs.nix
           home-manager.nixosModules.home-manager {
@@ -50,7 +50,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.anon = {
               imports = [ ./modules/home-manager/kde_main.nix ];
-              home.stateVersion = "23.11";
+              home.stateVersion = "24.05";
             };
           }
         ];
