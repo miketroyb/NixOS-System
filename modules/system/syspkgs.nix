@@ -23,6 +23,7 @@
   ## Python packages
   python311Full
   python311Packages.pykeepass
+  python311Packages.pynacl
   (chromium.override {
     commandLineArgs = "--load-media-router-component-extension=1";
       })
