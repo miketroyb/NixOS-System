@@ -16,6 +16,7 @@
         pkgs.openrgb-with-all-plugins pkgs.blackbox-terminal 
         pkgs.protonmail-bridge pkgs.rofi
         pkgs.gimp-with-plugins pkgs.htop
+	pkgs.freetube
 	## Gnome specific apps
         pkgs.gnome.gnome-tweaks pkgs.adw-gtk3
         pkgs.gnome.gnome-software pkgs.gnome-extension-manager
