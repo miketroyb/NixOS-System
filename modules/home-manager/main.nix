@@ -4,6 +4,7 @@
   home.username = "anon";
   home.homeDirectory = "/home/anon";
   programs.home-manager.enable = true;
+  fonts.fontconfig.enable = false;
 
   home.packages = [ 
   	## Desktop agnostic apps
