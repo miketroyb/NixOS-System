@@ -14,7 +14,7 @@
         pkgs.wl-clipboard pkgs.flatpak
         pkgs.libsForQt5.okular pkgs.thunderbird pkgs.google-chrome
         pkgs.openrgb-with-all-plugins pkgs.blackbox-terminal 
-        pkgs.protonmail-bridge
+        pkgs.protonmail-bridge pkgs.rofi
         pkgs.gimp-with-plugins pkgs.htop
 	## Gnome specific apps
         pkgs.gnome.gnome-tweaks pkgs.adw-gtk3
