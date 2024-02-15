@@ -21,6 +21,7 @@
   neovim
   pinentry-qt
   ## Python packages
+  python311Full
   python311Packages.pykeepass
   (chromium.override {
     commandLineArgs = "--load-media-router-component-extension=1";
