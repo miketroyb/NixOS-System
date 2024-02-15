@@ -6,12 +6,6 @@
 {
   ## Boot settings
   boot.kernelPackages = pkgs.linuxPackages_6_7;
-  #boot.kernelPatches = [ {
-  #		extraConfig = ''
-  #
-  #		'';
-
-  #} ];
   boot.plymouth.enable = false;
   boot.loader.systemd-boot.enable = false;
   boot.loader.grub.enable = true;

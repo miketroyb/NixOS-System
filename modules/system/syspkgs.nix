@@ -2,13 +2,12 @@
 {
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  inter
-  roboto
   wineWowPackages.stable
   wine
   variety
   papirus-icon-theme
   jq
+  qutebrowser
   stellarium
   jellyfin
   shell_gpt
@@ -19,9 +18,6 @@
   deluge-gtk
   brave
   webtorrent_desktop
-  roboto-mono
-  roboto-serif
-  nerdfonts
   neovim
   pinentry-qt
   (chromium.override {
