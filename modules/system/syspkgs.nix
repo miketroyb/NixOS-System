@@ -20,6 +20,8 @@
   webtorrent_desktop
   neovim
   pinentry-qt
+  ## Python packages
+  python311Packages.pykeepass
   (chromium.override {
     commandLineArgs = "--load-media-router-component-extension=1";
       })
