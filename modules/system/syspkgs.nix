@@ -18,7 +18,7 @@
   deluge-gtk
   brave
   webtorrent_desktop
-  neovim gvim 
+  neovim vim-full vimer 
   pinentry-qt
   ## Python packages
   python311Full
