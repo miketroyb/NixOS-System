@@ -36,6 +36,7 @@
         pkgs.gnomeExtensions.pop-shell
         pkgs.gnomecast pkgs.qgnomeplatform
 	## kde specific apps
+	pkgs.latte-dock
 	pkgs.libsForQt5.skanlite pkgs.libsForQt5.accounts-qt
         pkgs.libsForQt5.skanpage pkgs.libsForQt5.filelight 
         pkgs.libsForQt5.kgpg
