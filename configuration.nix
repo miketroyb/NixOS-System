@@ -30,6 +30,12 @@
   services.xserver.displayManager.sddm.enable = false;
   services.xserver.desktopManager.gnome.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.displayManager.defaultSession = "plasmawayland";
+
+  qt = {
+	  enable = true;
+	  platformTheme = "qt5ct";
+  };
 
   # Intel Video acceleration
   nixpkgs.config.packageOverrides = pkgs: {
