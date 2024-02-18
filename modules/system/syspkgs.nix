@@ -26,6 +26,7 @@
     ## Python packages
     python311Full
     python311Packages.pykeepass
+    python311Packages.pip
     python311Packages.pynacl
   ];
   programs = {
