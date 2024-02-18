@@ -45,10 +45,6 @@
         pkgs.libsForQt5.kaccounts-providers
         pkgs.libsForQt5.kio-gdrive
         pkgs.libsForQt5.okular
-	## Python packages
-	pkgs.python311Full
-	pkgs.python311Packages.pykeepass
-	pkgs.python311Packages.pynacl
     ];
 }
 
