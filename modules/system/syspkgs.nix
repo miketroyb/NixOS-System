@@ -35,8 +35,8 @@
 	enable = true;
     };
   ## Python packages
-  pkgs.python311Full
-  pkgs.python311Packages.pykeepass
-  pkgs.python311Packages.pynacl
+  python311Full
+  python311Packages.pykeepass
+  python311Packages.pynacl
   };
 }
