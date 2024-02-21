@@ -10,13 +10,13 @@
   	## Desktop agnostic apps
   	keepassxc ungoogled-chromium 
         firefox megasync libreoffice 
-        ranger fd fzf git 
+        ranger fd fzf git rofi-wayland
         wl-clipboard flatpak
         libsForQt5.okular thunderbird google-chrome
         openrgb-with-all-plugins blackbox-terminal 
-        protonmail-bridge rofi
+        protonmail-bridge
         gimp-with-plugins htop
-	freetube
+	freetube whois
 	## Gnome specific apps
         gnome.gnome-tweaks adw-gtk3
         gnome.gnome-software gnome-extension-manager
